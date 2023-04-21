@@ -12,17 +12,36 @@ body{
 header{
     border: 1px solid black;
     background-color: darkgrey;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+header h1{
+    margin: 0;
+    align-items: center;
 }
 header ul{
-    display: flex;
+    width: 100%;
+    border: 1px solid black;
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
 }
-header li{
-    margin-right: 20px;
+header li:not(:first-child){
+    background-color: #ccc;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid black;
 }
 header ul li img{
     width: 50px;
     height: 50px;
+}
+.opciones{
+    display: flex;
+    margin: auto;
 }
 nav{
     border: 1px solid black;
